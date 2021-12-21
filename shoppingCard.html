@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Card</title>
+    <link rel="stylesheet" href="03-styles/typography.css">
+    <link rel="stylesheet" href="03-styles/styles.css">
+    <!--Bootstap CSS-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Bootstarp JS-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <!--Font Link-->
+    <script src="https://kit.fontawesome.com/a01662465d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--header-->
+    <header>                
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="px-5 navbar-brand" href="index.html"><img class="" src="../img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse  " id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--hedear page-->
+
+    <section class="page-header p-5 pt-5">
+        <div class="container-fluid">
+            <div class="row backgound ">
+                <div class="col">
+                    <h1 class="fs-2">shopping card</h1>
+                </div>
+                <div class="col text-end">
+                    <p class="cg"><a class="cgreen" href="index.html">home</a> / shopping card</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--shopping card-->
+
+    <section class="shopping-card">
+        <div class="container">
+            <div class="row">
+                <p>You currently have 3 item(s) in your cart.</p>
+                <div class="col-9">
+                    <div class="table-responsive">
+                        <table class="table caption-top">
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="fs-6 fw-bold">product</td>
+                                    <td class="fs-6 fw-bold">Unit price</td>
+                                    <td class="fs-6 fw-bold">quantity</td>
+                                    <td class="fs-6 fw-bold">Discount</td>
+                                    <td class="fs-6 fw-bold">Total</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img class="img-fluid" src="../img/p1.jpg" alt="">
+                                        <a class="cgreen" href="">white rose armani</a>
+                                    </td>
+                                    <td>
+                                        <input type="number">
+                                    </td>
+                                    <td>$123.00</td>
+                                    <td>$0</td>
+                                    <td>$246.00</td>
+                                    <td>
+                                        <i class="cgreen fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img class="img-fluid" src="../img/p2.jpg" alt="">
+                                        <a class="cgreen" href="productDetails.html">white rose armani</a>
+                                    </td>
+                                    <td>
+                                        <input type="number">
+                                    </td>
+                                    <td>$200.00</td>
+                                    <td>$0</td>
+                                    <td>$200.00</td>
+                                    <td>
+                                        <i class="cgreen fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cg fs-5 fw-bold">
+                                        total
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="cg fs-5 fw-bold">
+                                        $446.00
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="container basket">
+                        <div class="row p-5">
+                            <div class="col">
+                                <div class="btn-gray">
+                                    <a href=""><i class="fas fa-chevron-left"></i> back to basket</a>
+                                </div>
+                            </div>
+                            <div class="col d-inline-block">
+                                <div class="btn-gray d-inline">
+                                    <a href=""><i class="fas fa-sync"></i> update card</a>
+                                </div>
+                                <div class="btn-left btn-green d-inline">
+                                    <a href="">proceed to checkout <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container ">
+                        <div class="row may-like">
+                            <div class="col-3 max-h">
+                                <hr>
+                                <h3>you may also like this product</h3>
+                                <hr>
+                            </div>
+                            <div class="col-3">
+                                <img class="img-fluid" src="../img/p2.jpg" alt="">
+                                <div class="text-center ">
+                                    <a href="">fur coat</a>
+                                    <p>$143.00</p>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="col-3">
+                                <img class="img-fluid" src="../img/p3.jpg" alt="">
+                                <div class="text-center">
+                                    <a href="">fur coat</a>
+                                    <p>$143.00</p>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class=" col-3">
+                                <img class="img-fluid" src="../img/p1.jpg" alt="">
+                                <div class="text-center">
+                                    <a href="">fur coat</a>
+                                    <p>$143.00</p>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="container-md order-s">
+                        <div class="title-c p-4">
+                            <h3 class="fs-4">order summary</h3>
+                        </div>
+                        <div class="back-c p-4">
+                            <div class="row">
+                                <p class="fs-5 fw-light cg">Shipping and additional costs are calculated based on the
+                                    values you have entered.</p>
+                                <hr>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="cg fs-6 cap">order subtotal</p>
+                                </div>
+                                <div class="col">
+                                    <p>$446.00</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="cg fs-6 cap">Shipping and handling</p>
+                                </div>
+                                <div class="col">
+                                    <p>$10.00</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="cg fs-6 cap">Tax</p>
+                                </div>
+                                <div class="col">
+                                    <p>$0.00</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="cg fs-6 fw-bold cap">total</p>
+                                </div>
+                                <div class="col">
+                                    <p class="fw-bold">$456.00</p>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        
+                    </div>
+                    <div class="container-md order-s pt-5 pb-5">
+                        <div class="title-c p-4">
+                            <h3 class="fs-4"> code coupon</h3>
+                        </div>
+                        <div class="back-c p-4">
+                            <p class="cg">If you have a coupon code, please enter it in the box below.</p>
+                        </div>
+                        <div class="back-c p-4">
+                            <div class="row size">
+                                <div class="col">                                    
+                                    <input class="" type="text">
+                                </div>
+                                <div class="col">
+                                    <button class=""><i class="fas fa-gift"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--footer-->
+
+    <footer>
+        <div class="row p-5">
+            <div class="col">
+                <h4 class="cw">about us</h4>
+                <p class="about cg fs-6">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                    turpis
+                    egestas.</p>
+                <hr class="cg">
+                <h5 class="cw">JOIN OUR MONTHLY NEWSLETTER</h5>
+                <div class="input-group">
+                    <input type="email" placeholder="Email adress">
+                    <button><i class="white-fas fs-5 fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+
+            <div class="col">
+                <h4 class="cw">blog</h4>
+                <div class="blogs pb-1">
+                    <img class="small" src="../img/footer.jpg" alt="">
+                    <a class="cw fw-bolder hover-a" href="">blog post name</a>
+                </div>
+                <div class="blogs pb-1">
+                    <img class="small" src="../img/footer.jpg" alt="">
+                    <a class="cw fw-bolder hover-a" href="">blog post name</a>
+                </div>
+                <div class="blogs pb-1">
+                    <img class="small" src="../img/footer.jpg" alt="">
+                    <a class="cw fw-bolder hover-a" href="">blog post name</a>
+                </div>
+            </div>
+
+            <div class="col">
+                <h4 class="cw">contact</h4>
+                <p class="cg fs-6"><span class="fw-bolder">UNIVERSAL LTD.</span> <br> 13/25 NEW AVENUE NEWTOWN UPON
+                    RIVER 45Y 73J ENGLAND <br> <span class="fw-bolder">GREAT
+                        BRITAIN</span>
+                </p>
+                <br>
+                <div class="contact-a backc-green">
+                    <a class="cw" href="contact.html">go to contact page</a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div>
+                    <a href=""><img src="../img/footer.jpg" alt=""></a>
+                    <a href=""><img src="../img/footer.jpg" alt=""></a>
+                    <a href=""><img src="../img/footer.jpg" alt=""></a>
+                </div>
+                <div>
+                    <a href=""><img src="../img/footer.jpg" alt=""></a>
+                    <a href=""><img src="../img/footer.jpg" alt=""></a>
+                    <a href=""><img src="../img/footer.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="a-footer p-5">
+            <p class="cg fs-6">© 2021. Your company / name goes here</p>
+            <p class="cg fs-6">Template designed by <span class="c"><a href=""> Bootstrapious </a></span> & <span
+                    class="c"><a href="">HHQ</a></span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

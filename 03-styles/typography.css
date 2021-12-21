@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+h1,h2,h3,h4,h5 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3rem !important;
+}
+
+h2 {
+    font-size: 2.5rem !important;
+}
+h3{
+font-size: 2rem !important;
+}
+
+h4 {
+    font-size: 1.5rem !important;
+}
+
+h5 {
+    font-size: 1rem !important;
+}
+
+h2::after {
+    content: '';
+    height: 3px;
+    width: 100px;
+    background-color:rgb(118, 209, 118);
+    margin-top:  auto;
+    margin-left:  auto;
+    margin-right:  auto;
+    margin-top:  10px;
+    display: block;
+    
+}
+
+.onleft::after {
+    content: '';
+    height: 3px;
+    width: 120px;
+    background-color:rgb(118, 209, 118);
+    margin-top:  auto;
+    margin-left:  auto;
+    margin-right:  auto;
+    margin-top:  10px;
+    display: block;
+    position: absolute;
+}
+
+p {
+    font-size: larger;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none !important;
+}
+
+.cgreen{
+    color:rgb(118, 209, 118);
+
+}
+
+
+.backc-green{
+    background-color:rgb(118, 209, 118);
+
+}
+
+.cgreen-h:hover{
+    color:rgb(118, 209, 118);
+}
+
+.cg {
+    color: gray;
+}
+
+.cg-h:hover {
+    color: gray;
+}
+
+.fas {
+    cursor: pointer;
+}
+
+.white-fas, .green-fas {
+    font-size: 30px;
+}
+
+.green-fas {
+    color: rgb(118, 209, 118);
+}
+
+.cw, .white-fas {
+    color: white !important;
+}
+
+.btnr{
+    outline: none !important;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,0);
+    transition: .6s;
+    opacity: 0;
+    z-index: 1;
+    border: solid 2px white;
+    padding: 10px;
+    font-weight: 700;
+}
+
+
+
+
+
+.blog-post:hover .btnr, .blog-post:hover .btnr a{
+    transform: translate(-50%,50%);
+    bottom: 50%;
+    opacity: 1;
+    color: rgb(118, 209, 118);
+    background-color: white;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity:0;
+    transition: .5s;
+}
+ 
+.blog-post:hover .overlay {
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(118, 209, 118);
+}
+
+.cap{
+    text-transform: capitalize;
+}

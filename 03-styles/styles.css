@@ -1,0 +1,837 @@
+/*----------------------Home Page------------------------*/
+
+/* header */
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+.navbar-nav li a {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black !important;
+    transition: .4s;
+}
+
+.navbar-nav li a:hover {
+    color: rgb(118, 209, 118) !important;
+}
+
+/* swiper */
+
+.carousal {
+    height: 60vh !important;
+}
+
+.swiper {
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(rgba(106, 160, 106, 0.829), rgba(106, 160, 106, 0.829)), url(../img/backgroundCarousalHome.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.swiper {
+    color: green !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: red !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white !important;
+  }
+
+.swiper-slide {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.slide-text {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*services*/
+
+.services {
+    text-align: center;
+    line-height: 2rem;
+}
+
+.services .fas {
+    border: solid 2px;
+    padding: 15px;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.services .fas:hover {
+    transform: scale(1.2);
+}
+
+
+/* testimoinials*/
+
+.testimonials {
+    padding: 30px;
+    background-image: url(../img/testimonials.png);
+}
+
+.testimonials .row {
+    justify-content: center;
+    column-gap: 3vh;
+    padding-top: 3vh;
+}
+
+.testimonials .col {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 83vh;
+    position: relative;
+    min-width: 40vh;
+    max-width: 55vh;
+}
+
+.testimonials .container p {
+    padding-top: 4vh;
+}
+
+.main-testimonial {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.main-testimonial img {
+    height: 10vh;
+}
+
+.main-testimonial .green-fas {
+    font-size: 50px;
+}
+
+.main-testimonial img {
+    border-radius: 50%;
+    border: solid 5px white;
+    box-shadow: 2px 2px 20px rgb(116, 114, 114);
+}
+
+/*banner*/
+
+.info-banner {
+    background-image: url(../img/seeMore.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10vh 0;
+}
+
+
+.info-banner a {
+    padding: 10px 20px;
+    text-decoration: none;
+    border: solid 3px;
+    font-size: 20px;
+    font-weight: 700;
+    transition: .4s;
+}
+
+.info-banner a:hover {
+    background-color: white;
+    color: rgb(118, 209, 118);
+    border: none;
+}
+
+.info-banner .fas {
+    font-size: 50px;
+    border: solid 3px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/*blog*/
+
+.blog .left a {
+    color: rgb(118, 209, 118);
+}
+
+.blog .left a:hover {
+    color: rgb(118, 209, 118);
+}
+
+.blog col {
+    max-height: 30vh;
+}
+
+.img-box {
+    width: 300px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.link {
+    color: rgb(118, 209, 118);
+}
+
+.link:hover {
+    color: rgb(118, 209, 118);
+}
+
+.link2 {
+    color: rgb(118, 209, 118);
+    border: 2px solid;
+    padding: 10px 20px;
+    font-weight: 700;
+    transition: .4s;
+}
+
+.link2:hover {
+    color: white;
+    background-color: rgb(118, 209, 118);
+}
+
+/*sponsors*/
+
+.sponsors {
+    background: #efefef !important;
+    min-height: 40vh;
+}
+
+.sponsors .row {
+    justify-content: space-between;
+}
+
+.sponsors img {
+    height: 100px;
+    filter: grayscale(1);
+    padding-bottom: 14px;
+}
+
+.sponsors img:hover {
+    filter: none;
+}
+
+/*footer*/
+
+footer {
+    background-color: #545454;
+}
+
+.a-footer {
+    background-color: #414141;
+    min-height: 15vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer hr {
+    border: solid 1px;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.input-group input {
+    position: relative;
+    flex: 1 1 auto;
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    background-color: transparent !important;
+
+}
+
+.input-group input::placeholder {
+    text-transform: capitalize;
+}
+
+.input-group input[type=email] {
+    border-color: white;
+}
+
+.input-group input[type=email]:focus {
+    border-color: white;
+}
+
+.input-group button {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    left: 86%;
+    top: 20%;
+}
+
+footer .small {
+    height: 50px;
+}
+
+footer .contact-a {
+    background-color: rgb(118, 209, 118);
+    color: white;
+    font-weight: 700;
+    padding: 10px 20px;
+    transition: .4;
+    max-width: 230px;
+}
+footer .contact:hover {
+    color: white;
+    background-color: rgb(149, 202, 149);
+}
+
+footer img {
+    height: 80px;
+}
+
+.hover-a:hover {
+    color: white;
+}
+
+footer .c a,
+footer .c a:hover {
+    color: rgb(118, 209, 118);
+}
+
+/*----------------------Portfolio Page------------------------*/
+
+/*hedear page*/
+
+.page-header {
+    background-image: url(../img/testimonials.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/*portfolio*/
+
+.portfolio .btnr {
+    height: -webkit-fill-available;
+    width: 100%;
+    border: none;
+    z-index: 10;
+}
+
+.portfolio .img-box:hover .btnr,
+.img-box:hover .btnr a {
+    background-color: transparent;
+}
+
+.portfolio .overlay {
+    height: 100%;
+    width: 100%;
+    right: .1%;
+}
+
+.portfolio .btnr a {
+    color: white !important;
+    border: solid 2px;
+    padding: 5px 15px;
+    font-weight: 700;
+}
+
+.portfolio .btnr a:hover {
+    color: white !important;
+}
+
+/*about*/
+
+.about-us {
+    background-image: url(../img/testimonials.png);
+}
+
+.about-us .fas {
+    font-size: 25px;
+    border: solid 2px;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.about-us .pt-3 {
+    line-height: 50px;
+}
+
+.about-us p {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/*----------------------Portfolio Page------------------------*/
+
+/*portfolio details*/
+
+.portfolio-details .swiper {
+    background: unset;
+}
+
+.project h3::after {
+    content: '';
+    height: 3px;
+    width: 100px;
+    background-color: rgb(118, 209, 118);
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: block;
+}
+
+.description::after {
+    transform: translate(-368px);
+}
+
+.more-h::after {
+    width: 55px !important;
+    transform: translate(-175px);
+}
+
+.related-p::after {
+    transform: translate(-585px);
+}
+
+.project .btnr a {
+    color: white !important;
+    border: solid 2px;
+    padding: 1px;
+    font-weight: 700;
+}
+
+.project .btnr a:hover {
+    color: rgb(118, 209, 118) !important;
+    background-color: white;
+
+    border-color: white;
+}
+
+/*----------------------Shop Page------------------------*/
+
+/*full category*/
+.full-category img:hover {
+    transform: scale(1.1);
+}
+
+.load a {
+    border: solid 2px rgb(173, 173, 173);
+    padding: 10px 15px;
+    color: rgb(118, 209, 118);
+
+
+}
+
+
+.load a:hover {
+    color: rgb(118, 209, 118);
+}
+
+.load .a-load {
+    color: rgb(118, 209, 118);
+    border-color: rgb(118, 209, 118);
+    transition: .3s;
+}
+
+.load .a-load:hover {
+    background-color: rgb(118, 209, 118);
+    color: white;
+}
+
+.btn-left {
+    margin-left: 4px;
+}
+
+/*----------------------Checkout Page------------------------*/
+
+.checkout .col-9 {
+    min-width: 60vh;
+}
+
+.checkout .flex-d {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-height: 30vh;
+    min-height: 10vh;
+}
+
+.checkout .flex-d hr {
+    color: rgb(118, 209, 118);
+    margin: 0;
+    padding-top: 0;
+}
+
+.checkout .flex-d:hover {
+    background-color: rgb(118, 209, 118);
+    color: white;
+    cursor: pointer;
+}
+
+.checkout .flex-d a {
+    text-transform: capitalize;
+}
+
+.checkout .flex-d:hover a {
+    color: white;
+}
+
+.checkout .div-f {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.div-f2 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.text-t {
+    text-transform: capitalize;
+}
+
+
+.checkout select {
+    height: 7vh;
+    width: 200px;
+}
+
+.checkout input {
+    height: 7vh;
+}
+
+.checkout input[type=text] {
+    border: solid 1px gray;
+}
+
+.checkout input[type=text]:focus-visible {
+    border: 1px solid rgb(118, 209, 118) !important;
+    outline: none;
+
+}
+
+.checkout input[type=text]:focus {
+    box-shadow: 1px 0px 10px rgb(118, 209, 118) !important;
+    border: 1px solid rgb(118, 209, 118) !important;
+
+}
+
+.checkout label {
+    color: gray !important;
+}
+
+.basket {
+    background-color: #f8f9fa !important;
+    min-width: 60vh;
+}
+
+.basket .row {
+    justify-content: space-around;
+}
+
+.basket .btn-green,
+.basket .btn-gray {
+    color: white;
+    padding: 10px 15px;
+}
+
+.basket .btn-green a,
+.basket .btn-gray a {
+    color: white;
+}
+
+.basket .btn-green a:hover,
+.basket .btn-gray a:hover {
+    color: white;
+}
+
+.basket .btn-green {
+    background-color: rgb(118, 209, 118);
+    width: 44vh;
+}
+
+
+.basket .btn-gray {
+    background-color: gray;
+    width: 30vh;
+}
+
+.order-s {
+    min-width: 44vh;
+}
+
+
+.order-s .row {
+    flex-direction: row;
+}
+
+.title-c {
+    background-color: #efefef;
+}
+
+.back-c {
+    background-color: #f8f9fa;
+}
+
+.cap {
+    text-transform: capitalize;
+}
+
+/*----------------------Shop Card Page------------------------*/
+
+table {
+    text-transform: capitalize;
+}
+
+table img {
+    height: 60px !important;
+    padding-right: 40px;
+}
+
+table input {
+    width: 7vh;
+}
+
+table tr td a:hover {
+    color: rgb(118, 209, 118);
+}
+
+.may-like {
+    flex-direction: row;
+}
+
+.may-like img {
+    height: 200px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.may-like img:hover {
+    transform: scale(1.1);
+}
+
+/*----------------------Product Details Page------------------------*/
+/*product details*/
+
+.big-img {
+    height: 600px !important;
+}
+
+.available-s {
+    background-color: #f8f9fa;
+    border: solid 1px #e7e7e7;
+}
+
+.available-s h4 {
+    text-transform: capitalize;
+}
+
+.available-s select {
+    width: 300px;
+    height: 50px;
+    text-transform: uppercase;
+}
+
+.available-s select option {
+    padding-left: 10px;
+}
+
+.small-imgs {
+    padding-top: 161px;
+}
+
+
+.small-imgs img {
+    height: 140px;
+}
+
+.add-to-card {
+    border: solid 1px rgb(118, 209, 118);
+    padding: 5px 10px;
+}
+
+.add-to-card:hover {
+    color: rgb(118, 209, 118);
+}
+
+.heart {
+    background-color: gray;
+    padding: 5px 10px;
+}
+
+.scroll a:hover {
+    color: gray;
+}
+
+.figure {
+    background-color: #f8f9fa;
+}
+
+.social-media a {
+    padding-left: 20px;
+}
+
+.social-media .fas, .social-media .fab {
+    color: white;
+    padding: 10px 10px;
+    border-radius: 50%;
+} 
+
+.social-media .fa-facebook-f{
+    background-color: #4561ae;
+    padding: 10px 15px;
+}
+
+.fa-twitter {
+    background-color: #34ccff;
+
+}
+
+.fa-youtube {
+    background-color: #c22026;
+}
+
+.fa-envelope {
+    /*background-color: rgb(111, 150, 111);*/
+}
+
+.category::after {
+    content: '';
+    height: 3px;
+    width: 120px;
+    background-color:rgb(118, 209, 118);
+    margin-top:  auto;
+    margin-left:  auto;
+    margin-right:  auto;
+    margin-top:  10px;
+    display: block;
+    transform: translate(-92px);
+}
+
+.bac-category {
+    cursor: pointer;
+}
+
+.bac-category .span {
+    background-color: gray;
+    padding: 5px;
+}
+
+.bac-category .span-k{
+    background-color: gray;
+    padding: 6px 14px;
+}
+
+
+.bac-category:hover {
+    background-color: rgb(118, 209, 118);
+}
+
+.bac-category:hover .h5 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.bac-category:hover .span, .bac-category:hover .span-k {
+    background-color: white;
+}
+
+.bac-category:hover span {
+    color: rgb(118, 209, 118) !important;
+}
+
+.li li {
+    list-style-type: none;
+}
+
+.brand-h::after {
+    content: '';
+    height: 3px;
+    width: 70px;
+    background-color:rgb(118, 209, 118);
+    margin-top:  auto;
+    margin-left:  auto;
+    margin-right:  auto;
+    margin-top:  10px;
+    display: block;
+    transform: translate(-10px);
+}
+
+
+.colors-h::after {
+    content: '';
+    height: 3px;
+    width: 70px;
+    background-color:rgb(118, 209, 118);
+    margin-top:  auto;
+    margin-left:  auto;
+    margin-right:  auto;
+    margin-top:  10px;
+    display: block;
+    transform: translate(-10px);
+}
+
+.brand button, .colors button {
+    background-color: red;
+    border: none;
+    padding: 5px 7px;
+    color: white;
+}
+
+.apply {
+    border: 1px solid rgb(118, 209, 118);
+    padding: 3px 6px;
+}
+
+.color-box {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(118, 209, 118);
+}
+
+.white-color, .blue-color, .green-color .yellow-colorm .red-color {
+    width: 20px;
+    height: 20px;
+    border: 1px solid gray;
+}
+
+.white-color {
+    background-color: white;
+}
+
+.blue-color {
+    background-color: blue;
+}
+.green-color {
+    background-color: green !important;
+}
+.yellow-color {
+    background-color: yellow;
+}
+
+/*----------------------Contact Page------------------------*/
+
+

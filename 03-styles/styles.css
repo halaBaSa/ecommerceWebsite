@@ -6,6 +6,11 @@
     position: absolute;
     z-index: 1000;
 }
+
+.navbar-brand  img {
+    height: 70px;
+}
+
 .navbar-nav li {
     padding-right: 20px;
 }
@@ -30,7 +35,7 @@ header .homepage{
 .swiper {
     width: 100%;
     height: 100vh; 
-    background-image: linear-gradient(rgba(106, 160, 106, 0.829), rgba(106, 160, 106, 0.829)), url(../img/backgroundCarousalHome.jpg);
+    background-image: linear-gradient(rgba(247, 166, 166, 0.651), rgba(224, 119, 119, 0.726)), url(../img/backgroundCarousalHome.jpg);
     background-position: center center;
     background-size: cover;
     display: flex;

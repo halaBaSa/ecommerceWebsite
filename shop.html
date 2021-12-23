@@ -6,28 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
-    <link rel="stylesheet" href="03-styles/typography.css">
-    <link rel="stylesheet" href="03-styles/styles.css">
     <!--Bootstap CSS-->
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!--Bootstarp JS-->
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-    <!--Font Link-->
-    <script src="https://kit.fontawesome.com/a01662465d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--Swiper CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="03-styles/typography.css">
+    <link rel="stylesheet" href="03-styles/styles.css">
 </head>
 
 <body>
 
     <!--header-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light relative-nav">
             <div class="container-fluid">
-                <a class="px-5 navbar-brand" href="index.html"><img class="" src="../img/logo.png" alt=""></a>
+                <a class="navbar-brand" href="index.html"><img class="" src="/img/halashoplogo_03.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -160,41 +154,43 @@
         </div>
     </section>
 
-    </div>
-    <!--footer-->
 
-    <footer>
+<!--footer-->
+
+<footer>
+    <div class="container">
         <div class="row p-5">
-            <div class="col">
+            <div class="col-md-3">
                 <h4 class="cw">about us</h4>
-                <p class="about cg fs-6">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                <p class="about cg fs-6">Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                    ac
                     turpis
                     egestas.</p>
                 <hr class="cg">
                 <h5 class="cw">JOIN OUR MONTHLY NEWSLETTER</h5>
                 <div class="input-group">
                     <input type="email" placeholder="Email adress">
-                    <button><i class="white-fas fs-5 fas fa-paper-plane"></i></button>
+                    <button><i class="purple-fas fs-5 fas fa-paper-plane"></i></button>
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col-md-3">
                 <h4 class="cw">blog</h4>
                 <div class="blogs pb-1">
-                    <img class="small" src="../img/footer.jpg" alt="">
+                    <img class="small" src="img/blog1.jpeg" alt="">
                     <a class="cw fw-bolder hover-a" href="">blog post name</a>
                 </div>
                 <div class="blogs pb-1">
-                    <img class="small" src="../img/footer.jpg" alt="">
+                    <img class="small" src="img/blog2.jpeg" alt="">
                     <a class="cw fw-bolder hover-a" href="">blog post name</a>
                 </div>
                 <div class="blogs pb-1">
-                    <img class="small" src="../img/footer.jpg" alt="">
+                    <img class="small" src="img/blog3.jpeg" alt="">
                     <a class="cw fw-bolder hover-a" href="">blog post name</a>
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col-md-3">
                 <h4 class="cw">contact</h4>
                 <p class="cg fs-6"><span class="fw-bolder">UNIVERSAL LTD.</span> <br> 13/25 NEW AVENUE NEWTOWN UPON
                     RIVER 45Y 73J ENGLAND <br> <span class="fw-bolder">GREAT
@@ -206,25 +202,29 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col-md-3">
                 <div>
-                    <a href=""><img src="../img/footer.jpg" alt=""></a>
-                    <a href=""><img src="../img/footer.jpg" alt=""></a>
-                    <a href=""><img src="../img/footer.jpg" alt=""></a>
+                    <a href=""><img src="img/blog4.jpeg" alt=""></a>
+                    <a href=""><img src="img/blog3.jpeg" alt=""></a>
                 </div>
                 <div>
-                    <a href=""><img src="../img/footer.jpg" alt=""></a>
-                    <a href=""><img src="../img/footer.jpg" alt=""></a>
-                    <a href=""><img src="../img/footer.jpg" alt=""></a>
+                    <a href=""><img src="img/blog1.jpeg" alt=""></a>
+                    <a href=""><img src="img/blog2.jpeg" alt=""></a>
                 </div>
             </div>
         </div>
-        <div class="a-footer p-5">
-            <p class="cg fs-6">© 2021. Your company / name goes here</p>
-            <p class="cg fs-6">Template designed by <span class="c"><a href=""> Bootstrapious </a></span> & <span
-                    class="c"><a href="">HHQ</a></span></p>
-        </div>
-    </footer>
+    </div>
+    <div class="a-footer">
+        <p class="cg fs-6">© 2021. HalaShop</p>
+        <p class="cg fs-6">Template designed by <span class="c"><a href="#">Hala</a></p>
+    </div>
+</footer>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<!--Font Link-->
+<script src="https://kit.fontawesome.com/a01662465d.js" crossorigin="anonymous"></script>
+<!--Swiper JS-->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="04- javascript/main.js"></script>
 
 </body>
 

@@ -33,7 +33,7 @@ h2::after {
     content: '';
     height: 3px;
     width: 100px;
-    background-color:rgb(118, 209, 118);
+    background-color:#FF006E;
     margin-top:  auto;
     margin-left:  auto;
     margin-right:  auto;
@@ -46,7 +46,7 @@ h2::after {
     content: '';
     height: 3px;
     width: 120px;
-    background-color:rgb(118, 209, 118);
+    background-color:#FF006E;
     margin-top:  auto;
     margin-left:  auto;
     margin-right:  auto;
@@ -64,19 +64,27 @@ a {
     text-decoration: none !important;
 }
 
+.cw {
+    color: white;
+}
+
 .cgreen{
-    color:rgb(209, 118, 118);
+    color:#907489;
 
 }
 
 
 .backc-green{
-    background-color:rgb(118, 209, 118);
+    background-color:#FF006E;
 
 }
 
 .cgreen-h:hover{
-    color:rgb(118, 209, 118);
+    color:#FF006E;
+}
+
+.cpink {
+    color: #FF006E;
 }
 
 .cg {
@@ -91,14 +99,17 @@ a {
     cursor: pointer;
 }
 
-.white-fas, .green-fas {
+.white-fas, .purple-fas {
     font-size: 30px;
 }
 
-.green-fas {
-    color: rgb(209, 118, 118);
+.purple-fas {
+    color: #BF0092 ;
 }
 
+.img-box {
+    padding: 0 !important;
+}
 
 .btnr{
     outline: none !important;
@@ -115,15 +126,31 @@ a {
 }
 
 
+.btnr  a {
+    color: white !important;
+}
+
+.btnr a:hover {
+    color: #FF006E !important;
+
+}
+
+.btnr:hover  {
+    background-color: white !important;
+    color: #FF006E !important;
+}
 
 
+.blog-post {
+    padding: 0 !important;
+}
 
-.blog-post:hover .btnr, .blog-post:hover .btnr a{
+
+.blog-post:hover .btnr, .blog-post:hover .btnr a {
     transform: translate(-50%,50%);
     bottom: 50%;
     opacity: 1;
-    color: rgb(118, 209, 118);
-    background-color: white;
+   
 }
 
 .overlay {
@@ -135,11 +162,11 @@ a {
     transition: .5s;
 }
  
-.blog-post:hover .overlay {
+.blog-post:hover:hover .overlay {
     opacity: .5;
     width: 100%;
     height: 100%;
-    background-color: rgb(118, 209, 118);
+    background-color: #FF006E;
 }
 
 .cap{

@@ -379,39 +379,50 @@ footer .c a:hover {
 
 /*portfolio*/
 
-.portfolio .btnr {
-    /* height: -webkit-fill-available; */
-    width: 100%;
-    border: none;
-    z-index: 10;
-}
-
-.portfolio .img-box:hover .btnr,
-.img-box:hover .btnr a {
-    background-color: transparent;
-}
-
-.portfolio .overlay {
-    height: 100%;
-    width: 100%;
-    right: .1%;
-}
-
-.portfolio .btnr a {
-    color: white !important;
-    border: solid 2px;
-    padding: 5px 15px;
+.about-blog {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,0);
+    transition: .6s;
+    opacity:0;
+    z-index: 1;
     font-weight: 700;
+    padding-bottom: 12px;
 }
 
-.portfolio .btnr a:hover {
+.about-blog p {
+    font-size: 16px;
+}
+
+.img-box:hover .about-blog , .img-box:hover .about-blog a{
+    transform: translate(-50%,50%);
+    bottom: 50%;
+    opacity: 1; 
+}
+
+.about-blog   a {
     color: white !important;
+    border: solid 2px white;
+    padding: 2px 6px;
+}
+
+.about-blog  a:hover {
+    background-color: white !important;
+    color: #FF006E !important;
+
+}
+
+.img-box:hover .overlay {
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+    background-color: #FF006E;
 }
 
 /*about*/
 
 .about-us {
-    background-image: url(../img/testimonials.png);
 }
 
 .about-us .fas {
@@ -438,6 +449,12 @@ footer .c a:hover {
     background: unset;
 }
 
+.portfolio-details img {
+    object-fit: cover;
+    height: 700px;
+    width:700px;
+}
+
 .project h3::after {
     content: '';
     height: 3px;
@@ -448,6 +465,34 @@ footer .c a:hover {
     margin-right: auto;
     margin-top: 10px;
     display: block;
+}
+
+.available-s a {
+    font-weight: 500;  
+    transition: .3s;  
+}
+
+.available-s a:hover {
+    background-color: gray;
+    color: #FF006E;
+    border: none;
+}
+
+.available-s a:hover .available-s .fas{
+    color: gray  !important;
+}
+
+.available-s a:hover .available-s .fas {
+   
+}
+
+.available-s .fas {
+    color:  #FF006E !important;
+}
+
+.heart {
+    background-color: #f8f9fa !important;
+    color: gray ;
 }
 
 .description::after {
@@ -480,8 +525,16 @@ footer .c a:hover {
 /*----------------------Shop Page------------------------*/
 
 /*full category*/
-.full-category img:hover {
-    transform: scale(1.1);
+
+
+.img-scale img:hover {
+    transform: scale(1.3);
+}
+
+.img-scale {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .load a {
@@ -518,33 +571,35 @@ footer .c a:hover {
     min-width: 60vh;
 }
 
-.checkout .flex-d {
+
+/*
+.checkout .single-process {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-height: 30vh;
-    min-height: 10vh;
+    height: 30px;
 }
+*/
 
-.checkout .flex-d hr {
+.checkout .single-process hr {
     color: #FF006E;
     margin: 0;
     padding-top: 0;
 }
 
-.checkout .flex-d:hover {
+.checkout .single-process:hover {
     background-color: #FF006E;
     color: white;
     cursor: pointer;
 }
 
-.checkout .flex-d a {
+.checkout .single-process a {
     text-transform: capitalize;
 }
 
-.checkout .flex-d:hover a {
+.checkout .single-process:hover a {
     color: white;
 }
 
@@ -606,6 +661,10 @@ footer .c a:hover {
 .basket .btn-gray {
     color: white;
     padding: 10px 15px;
+    background-color: gray;
+    width: 40%;
+    margin: 0;
+    display: inline;
 }
 
 .basket .btn-green a,
@@ -620,7 +679,7 @@ footer .c a:hover {
 
 .basket .btn-green {
     background-color: #FF006E;
-    width: 44vh;
+    margin-left: 6px;
 }
 
 
@@ -674,21 +733,33 @@ table tr td a:hover {
 }
 
 .may-like img {
-    height: 200px;
-    padding-bottom: 10px;
     cursor: pointer;
+    transition: .4s;
 }
 
 .may-like img:hover {
     transform: scale(1.1);
+    
+}
+
+.may-like a {
+    color: #251D22;
 }
 
 .list-input {
     display: inline-block;
 }
 
+.h-height {
+    min-height: 4.5rem;
+}
 
-
+.back-c input {
+width: 80%;
+}    
+.back-c button {
+    width: 15%;
+}
 
 /*----------------------Product Details Page------------------------*/
 /*product details*/
@@ -723,6 +794,7 @@ table tr td a:hover {
 
 .small-imgs img {
     height: 140px;
+    cursor: pointer;
 }
 
 .add-to-card {
@@ -732,6 +804,11 @@ table tr td a:hover {
 
 .add-to-card:hover {
     color: #FF006E;
+}
+
+.add-to-card:hover .heart {
+    background-color: gray !important;
+    color: #FF006E !important;
 }
 
 .heart {
@@ -776,6 +853,10 @@ table tr td a:hover {
     background-color: rgb(111, 150, 111);
 }*/
 
+.hidden {
+    display: none;
+}
+
 .category::after {
     content: '';
     height: 3px;
@@ -804,21 +885,18 @@ table tr td a:hover {
 }
 
 
-.bac-category:hover {
+.color-styling, .color-styling h5 {
     background-color: #FF006E;
-}
-
-.bac-category:hover .h5 {
     color: white;
     text-transform: uppercase;
 }
 
-.bac-category:hover .span,
-.bac-category:hover .span-k {
+.color-styling .span,
+.color-styling .span-k {
     background-color: white;
 }
 
-.bac-category:hover span {
+.color-styling span {
     color: #FF006E !important;
 }
 
@@ -853,9 +931,14 @@ table tr td a:hover {
     transform: translate(-10px);
 }
 
+.brand button i,
+.colors button i {
+    padding-right: 10px;
+}
+
 .brand button,
 .colors button {
-    background-color: red;
+    background-color: #4561ae;
     border: none;
     padding: 5px 7px;
     color: white;
@@ -874,7 +957,7 @@ table tr td a:hover {
 
 .white-color,
 .blue-color,
-.green-color .yellow-colorm .red-color {
+.green-color, .yellow-color, .red-color {
     width: 20px;
     height: 20px;
     border: 1px solid gray;
@@ -896,6 +979,12 @@ table tr td a:hover {
     background-color: yellow;
 }
 
+.red-color {
+    background-color: red;
+}
+
+
+
 /*----------------------Contact Page------------------------*/
 
 .contact .fas {
@@ -906,8 +995,17 @@ table tr td a:hover {
     cursor: pointer;
 }
 
+
 .contact .fas:hover {
     transform: scale(1.2);
+}
+
+.contact-form {
+    background: linear-gradient(#800a1862, #800a1850),url(/img/contact-form-background.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
 }
 
 .contact-form button {
@@ -930,9 +1028,27 @@ table tr td a:hover {
     background-color: #251D22;
 }
 
+/*------------------------------- Mobile <1400pX-------------------- */
 
 
-/*------------------------------- Mobile <700p-------------------- */
+@media (max-width: 1400px) {
+    .h-height {
+        min-height: 7.5rem;
+    }
+
+    .basket .btn-green ,
+    .basket .btn-gray {
+      display: block;
+      width: 100%;
+      margin: 6px 0 0 0;
+    } 
+
+    .next {
+        display: none;
+    }
+}
+
+/*------------------------------- Mobile <700px-------------------- */
 @media (max-width: 768px) {
 
     .single-testimonial {

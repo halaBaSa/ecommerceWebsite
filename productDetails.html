@@ -55,7 +55,7 @@
                     <h1 class="fs-2">WHITE BLOUSE ARMANI</h1>
                 </div>
                 <div class="col text-end">
-                    <p class="cg"><a class="cgreen" href="index.html">home</a> / WHITE BLOUSE ARMANI</p>
+                    <p class="cg"><a class="cg-h cgreen" href="index.html">home</a> / WHITE BLOUSE ARMANI</p>
                 </div>
             </div>
         </div>
@@ -76,11 +76,15 @@
                     </div>
                     <div class="container">
                         <div class="row">
-                            <div class="col">
-                                <img id="big-img"  class="img-fluid big-img" src="../img/p3.jpg" alt="">
-                                <h3></h3>
+                            <div class="col-md-6">
+                                <div class="">
+                                    <img id="big-img"  class="img-fluid big-img" src="/img/product-detail-3.jpeg" alt="">
+                                    <h3></h3>
+                                </div>
+                                
                             </div>
-                            <div class="col">
+                            <div class="col-md-6">
+
                                 <div class="available-s text-center p-5">
                                     <h4 class="fw-bold pb-3">Available sizes</h4>
                                     <form action="">
@@ -92,14 +96,13 @@
                                         </select>
                                     </form>
                                     <p class="fw-bold cg fs-3 pt-3">$124.00</p>
-                                    <a class="cgreen add-to-card" href=""><i class="cgreen fas fa-shopping-cart"></i>
-                                        add to cart</a>
-                                    <a class="heart cw" href=""><i class="far fa-heart"></i></a>
+                                    <a class="cgreen add-to-card" href="shoppingCard.html"><i class="fas fa-shopping-cart"></i>add to cart</a>
+                                    <a class="heart" href=""><i class="far fa-heart"></i></a>
                                 </div>
                                 <div class="small-imgs">
-                                    <img class="img-fluid small-img" src="../img/p1.jpg" alt="">
-                                    <img class="img-fluid small-img" src="../img/p3.jpg" alt="">
-                                    <img class="img-fluid small-img" src="../img/p4.jpg" alt="">
+                                    <img class="img-fluid small-img" src="/img/product-detail-1.jpeg" alt="">
+                                    <img class="img-fluid small-img" src="/img/product-detail-2.jpeg" alt="">
+                                    <img class="img-fluid small-img" src="/img/product-detail-3.jpeg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -151,24 +154,30 @@
                                 <hr>
                             </div>
                             <div class="col-3">
-                                <img class="img-fluid" src="../img/p2.jpg" alt="">
-                                <div class="text-center ">
+                                <div class="img-scale">
+                                    <img class="text-center img-fluid" src="img/product-1.jpeg" alt="">
+                                </div>
+                                <div class="mt-3 text-center ">
                                     <a href="">fur coat</a>
                                     <p>$143.00</p>
                                 </div>
                                 <hr>
                             </div>
                             <div class="col-3">
-                                <img class="img-fluid" src="../img/p3.jpg" alt="">
-                                <div class="text-center">
+                                <div class="img-scale">
+                                    <img class="img-fluid" src="img/product-2.jpeg" alt="">
+                                </div>
+                                <div class="mt-3 text-center">
                                     <a href="">fur coat</a>
                                     <p>$143.00</p>
                                 </div>
                                 <hr>
                             </div>
                             <div class=" col-3">
-                                <img class="img-fluid" src="../img/p1.jpg" alt="">
-                                <div class="text-center">
+                                <div class="img-scale">
+                                    <img class="img-fluid" src="img/product-3.jpeg" alt="">
+                                </div>
+                                <div class="mt-3 text-center">
                                     <a href="">fur coat</a>
                                     <p>$143.00</p>
                                 </div>
@@ -182,24 +191,30 @@
                                 <hr>
                             </div>
                             <div class="col-3">
-                                <img class="img-fluid" src="../img/p3.jpg" alt="">
-                                <div class="text-center ">
+                                <div class="img-scale">
+                                    <img class="img-fluid" src="img/product-4.jpeg" alt="">
+                                </div>
+                                <div class="mt-3 text-center ">
                                     <a href="">fur coat</a>
                                     <p>$143.00</p>
                                 </div>
                                 <hr>
                             </div>
                             <div class="col-3">
-                                <img class="img-fluid" src="../img/p1.jpg" alt="">
-                                <div class="text-center">
+                                <div class="img-scale">
+                                    <img class="img-fluid" src="img/product-3.jpeg" alt="">
+                                </div>
+                                <div class="mt-3 text-center">
                                     <a href="">fur coat</a>
                                     <p>$143.00</p>
                                 </div>
                                 <hr>
                             </div>
                             <div class=" col-3">
-                                <img class="img-fluid" src="../img/p2.jpg" alt="">
-                                <div class="text-center">
+                                <div class="img-scale">
+                                    <img class="img-fluid" src="img/product-2.jpeg" alt="">
+                                </div>
+                                <div class="mt-3 text-center">
                                     <a href="">fur coat</a>
                                     <p>$143.00</p>
                                 </div>
@@ -208,9 +223,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3 li">
+                <div class="col-3 li collection">
                     <h4 class="category">categories</h4>
-                    <div class="men">
+                    <div class="men field-category">
                         <ul class="p-2 bac-category d-flex align-items-center justify-content-between">
                             <a href="" class="h5 cgreen">
                                 <h5>men </h5>
@@ -219,7 +234,7 @@
                                 <span class=" cw">42</span>
                             </a>
                         </ul>
-                        <ul>
+                        <ul class="hidden catChoices">
                             <a href="">
                                 <li class="cg">t-shirts</li>
                             </a>
@@ -234,16 +249,16 @@
                             </a>
                         </ul>
                     </div>
-                    <div class="ladies">
+                    <div class="ladies field-category">
                         <ul class="p-2 bac-category d-flex align-items-center justify-content-between">
-                            <a href="" class="h5 cgreen">
-                                <h5>ladies </h5>
-                            </a>
-                            <a href="" class="cw span">
-                                <span class=" cw">123</span>
-                            </a>
+                                <a href="" class="h5 cgreen">
+                                    <h5>ladies </h5>
+                                </a>
+                                <a href="" class="cw span">
+                                    <span class=" cw">123</span>
+                                </a>
                         </ul>
-                        <ul>
+                        <ul  class="hidden catChoices">
                             <a href="">
                                 <li class="cg">t-shirts</li>
                             </a>
@@ -258,7 +273,7 @@
                             </a>
                         </ul>
                     </div>
-                    <div class="kids">
+                    <div class="kids field-category">
                         <ul class="p-2 bac-category d-flex align-items-center justify-content-between">
                             <a href="" class="h5 cgreen">
                                 <h5>kids </h5>
@@ -267,7 +282,7 @@
                                 <span class=" cw">11</span>
                             </a>
                         </ul>
-                        <ul>
+                        <ul class="hidden catChoices">
                             <a href="">
                                 <li class="cg">t-shirts</li>
                             </a>
@@ -315,37 +330,39 @@
                         <form class="pb-4" action="">
                             <div class="pt-2">
                                 <input type="checkbox" class="color-input">
-                                <label for="">
-                                    <div class="white-color"></div>
-                                    <a class="cg cg-h" href="">white</a>
+                                <label class="d-inline" for="">
+                                    <div class="d-inline-block white-color"></div>
+                                    <a class="d-inline-block cg cg-h" href="">white</a>
                                 </label>
                             </div>
-                            <div class="pt-2">
+                            <div class="pt-2 ">
                                 <input type="checkbox" name="" id="" class="color-input">
-                               <label for="">
-                                  <div class="blue-color"></div>
-                                  <a class="cg cg-h" href="">blue</a>
+                               <label class="d-inline" for="">
+                                  <div class="d-inline-block blue-color"></div>
+                                  <a class="d-inline-block cg cg-h" href="">blue</a>
                                </label>
                             </div>
                             <div class="pt-2">
                                 <input type="checkbox" name="" id="" class="color-input">
-                               <label for="">
-                                <div class="green-color"></div>
-                                <a class="cg cg-h" href=""> green</a>
+                               <label class="d-inline" for="">
+                                <div class="d-inline-block green-color"></div>
+                                <a class="d-inline-block cg cg-h" href=""> green</a>
                                 </label>
                             </div>
                             <div class="pt-2">
                                 <input type="checkbox" class="color-input">
-                                <label for="">
-                                   <a class="cg cg-h" href=""><div class="yellow-color"></div> yellow</a>
+                                <label class="d-inline" for="">
+                                    <div class="d-inline-block yellow-color"></div>
+                                    <a class="d-inline-block cg cg-h" href=""> yellow</a>
                                 </label>
                             </div>
 
                             <div class="pt-2">
 
                                 <input type="checkbox" class="color-input">
-                                <label for="">
-                                    <a class="cg cg-h" href=""><div class="red-color"></div> red</a>
+                                <label class="d-inline" for="">
+                                    <div class="d-inline-block red-color"></div>
+                                    <a class="d-inline-block cg cg-h" href=""> red</a>
                                 </label>
                             </div>
                         </form>

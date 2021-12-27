@@ -30,6 +30,7 @@ h5 {
 }
 
 h2::after {
+    
     content: '';
     height: 3px;
     width: 100px;
@@ -149,8 +150,7 @@ a {
 .blog-post:hover .btnr, .blog-post:hover .btnr a {
     transform: translate(-50%,50%);
     bottom: 50%;
-    opacity: 1;
-   
+    opacity: 1; 
 }
 
 .overlay {

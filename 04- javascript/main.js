@@ -14,6 +14,8 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
+/*----------Portfolio---------------*/
+
 // counter
 /*
 - call the element byId
@@ -27,7 +29,7 @@ const listOfCounts = document.querySelectorAll(".single-count");
 listOfCounts.forEach(element => {
     var end = element.getAttribute('data-count');
     var current = 0;
-    var speed = Math.floor(10000/end);
+    var speed = Math.floor(10000 / end);
     console.log(Math.abs(1.92));
 
     var counter = setInterval(() => {
@@ -40,15 +42,17 @@ listOfCounts.forEach(element => {
 
 })
 
-//products details
+/*-----------------products details------------------*/
 
-              
+// product
 
-const brandsInput= document.querySelectorAll('.brands-input');
-const colorsInput= document.querySelectorAll('.color-input'); 
+
+
+const brandsInput = document.querySelectorAll('.brands-input');
+const colorsInput = document.querySelectorAll('.color-input');
 
 function clearInput(groupOfInputs) {
-    groupOfInputs.forEach(element  => {
+    groupOfInputs.forEach(element => {
         element.checked = false;
     });
 };
@@ -65,9 +69,30 @@ smallImgs.forEach(element => {
     console.log(element.getAttribute('src'));
     element.addEventListener('click', () => {
         var smallImgSrc = element.getAttribute('src');
-        bigImg.setAttribute('src',smallImgSrc) ;
+        bigImg.setAttribute('src', smallImgSrc);
     })
 });
 
-                 
 
+// categories
+
+const ulCategory = document.querySelectorAll(".bac-category");
+
+var wachMsdod ="rah msdod";
+
+
+ulCategory.forEach(element => {
+    element.addEventListener('click', () => {
+        if (wachMsdod == "rah msdod") {
+            element.classList.add("color-styling");
+            var thisCatchoices = element.nextElementSibling;
+            thisCatchoices.classList.remove("hidden");
+            wachMsdod = "m7lol";
+        }else{
+            element.classList.remove("color-styling");
+            var thisCatchoices = element.nextElementSibling;
+            thisCatchoices.classList.add("hidden");
+            wachMsdod = "rah msdod";
+        }
+    });
+});

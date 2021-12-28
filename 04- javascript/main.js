@@ -14,6 +14,8 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
+
+
 /*----------Portfolio---------------*/
 
 // counter
@@ -78,7 +80,7 @@ smallImgs.forEach(element => {
 
 const ulCategory = document.querySelectorAll(".bac-category");
 
-var wachMsdod ="rah msdod";
+var wachMsdod = "rah msdod";
 
 
 ulCategory.forEach(element => {
@@ -88,11 +90,25 @@ ulCategory.forEach(element => {
             var thisCatchoices = element.nextElementSibling;
             thisCatchoices.classList.remove("hidden");
             wachMsdod = "m7lol";
-        }else{
+        } else {
             element.classList.remove("color-styling");
             var thisCatchoices = element.nextElementSibling;
             thisCatchoices.classList.add("hidden");
             wachMsdod = "rah msdod";
         }
+    });
+});
+
+/*----------checkout---------------*/
+
+const singleProcesses = document.querySelectorAll(".single-process");
+
+
+singleProcesses.forEach(element => {
+    element.addEventListener('click', () => {
+        singleProcesses.forEach(process => {
+            process.classList.remove('hide-2');
+        })
+        element.classList.add('hide-2');
     });
 });
